@@ -1,0 +1,133 @@
+/* Colores de Marca */
+:root {
+  --primary-color: #2196F3; /* Azul primario */
+  --success-color: #4CAF50; /* Verde para éxito */
+}
+
+/* Estilos globales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Fondo general */
+  color: #333; /* Color del texto principal */
+  background: linear-gradient(to right, #c8ccd9, #cc9797, #e5d6b6);
+  color: rgb(7, 7, 7);
+}
+
+/* Contenedor Principal */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--primary-color) 80%);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Barra de Navegación */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding:0px;
+  
+}
+
+/* Tarjetas de Productos */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Carrito */
+.cart-container {
+  padding: 20px;
+  margin-top: 20px;
+  transition: opacity 0.3s ease-in-out;
+  background-color: white; /* Fondo del carrito */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.cart-container:hover {
+  opacity: 0.9;
+}
+
+/* Campos de Texto */
+.text-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+/* Botón de Compra */
+.confirmar-compra-btn {
+  margin-top: 20px;
+  background-color: var(--success-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.confirmar-compra-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de Página */
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ddd; /* Fondo del pie de página */
+  border-top: 1px solid #ccc;
+}
+
+/* Estilos de Enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3; /* Cambiar color al pasar el ratón */
+}

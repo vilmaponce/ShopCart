@@ -1,0 +1,30 @@
+/* Estilos para botón de agregar al carrito */
+.add-to-cart-btn {
+    margin-top: 10px;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    /* Agrega un fondo degradado */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(45deg, #FF8E53 30%, #FE6B8B 90%);
+    /* Cambia los colores al pasar el ratón */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    
+}
