@@ -1,19 +1,44 @@
 # ShopCart - Aplicación de Carrito de Compras con React y Vite
 
-Descripción del Proyecto:
-ShopCart es una aplicación web de carrito de compras desarrollada con React y Vite. Proporciona una experiencia de compra intuitiva y eficiente, permitiendo a los usuarios explorar productos, agregarlos al carrito y realizar compras simuladas.
+# Mi Aplicación de Compras
 
+Esta aplicación de compras fue desarrollada utilizando React, Vite y Material-UI. A continuación, se proporciona una breve explicación de cómo funciona el carrito en la aplicación:
 
-Instrucciones de Uso:
-Instalación de Dependencias:
+## Carrito de Compras
 
-Ejecute el siguiente comando para instalar las dependencias del proyecto:
+El carrito de compras es una parte integral de la experiencia del usuario en nuestra aplicación. Está diseñado para permitir a los usuarios agregar productos, ajustar las cantidades y realizar compras simuladas. Aquí hay una descripción detallada:
 
-npm install
+### Agregar Productos al Carrito
 
-Inicie el servidor de desarrollo local utilizando:
+- En la página principal, los usuarios pueden explorar la lista de productos disponibles.
+- Cada producto tiene un botón "Agregar al Carrito" que, al hacer clic, agrega el producto al carrito.
+- Si el producto ya está en el carrito, se ajusta la cantidad en lugar de agregar un nuevo elemento.
 
-npm run dev
+### Ajustar Cantidades
+
+- Dentro del carrito, los usuarios pueden ajustar las cantidades de los productos.
+- Los botones "+" y "-" permiten aumentar o disminuir la cantidad de un producto respectivamente.
+- Si la cantidad se reduce a cero, el producto se elimina automáticamente del carrito.
+
+### Verificar y Confirmar Compra
+
+- Antes de realizar una compra simulada, los usuarios pueden verificar la información de pago y los productos en el carrito.
+- El botón "Verificar" realiza una validación simple de los campos de la tarjeta de crédito y muestra una alerta en caso de errores.
+- El botón "Confirmar Compra" abre un modal para que los usuarios confirmen su compra.
+
+### Eliminar Productos del Carrito
+
+- En el carrito, se proporciona un icono de tacho de basura junto a cada producto.
+- Al hacer clic en el icono de tacho de basura, el producto se elimina del carrito.
+
+## Tecnologías Utilizadas
+
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
+- Vite: Herramienta de desarrollo rápida para proyectos web.
+- Material-UI: Biblioteca de componentes de interfaz de usuario para React basada en el diseño de Google Material Design.
+
+¡Gracias por explorar mi aplicación de compras! Siéntase libre de contribuir, informar problemas o hacer sugerencias.
+
 
 ![Imagen de WhatsApp 2023-12-22 a las 12 04 37_2b696399](https://github.com/vilmaponce/ShopCart/assets/115092661/d31063f4-7fd5-40de-ae3f-3582241b6619)
 
